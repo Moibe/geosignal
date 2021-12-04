@@ -16,11 +16,12 @@ class DefaultController extends Controller {
     public function indexAction(Request $request) {
 
         
-        // $referer = $request->headers->get('referer');
+        $referer = $request->headers->get('referer');
         
-        // $valid_referals = $this->container->getParameter('referals');
+        $valid_referals = $this->container->getParameter('referals');
         
         // $response = $request->get('test') ? true:$this->strpos_array($referer, $valid_referals);
+        $response = true; 
         
         $em = $this->getDoctrine()->getManager();
         $producto = $em->getRepository('GeosignalWebBundle:Product')->findOneBy(array('locale' => $request->getLocale()));
