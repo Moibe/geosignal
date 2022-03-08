@@ -14,7 +14,7 @@ parameters:
     #[regular,static,coding,conekta]
     payment_type: "coding"
     # referals: [google,yahoo,youtube,bing,duckduckgo,facebook,adyou,ask,zapmeta,informationvine,the-sos,enow,draggo,jwabukum,alphasummit, gtmetrix]
-    referals: [google,yahoo,youtube,bing,facebook,alphasummit]
+    referals: [google,yahoo,youtube,bing,facebook,alphasummit,paperstreetwallet]
 
 framework:
     #esi:             ~
